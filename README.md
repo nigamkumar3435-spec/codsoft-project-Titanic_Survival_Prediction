@@ -2,28 +2,6 @@
 
 A Machine Learning project that predicts whether a passenger survived the Titanic disaster based on demographic and travel-related information. This project demonstrates the complete Machine Learning pipeline, from data preprocessing and exploratory data analysis (EDA) to model training, evaluation, and prediction.
 
----
-
-## 📖 Table of Contents
-
-- Overview
-- Dataset Information
-- Features
-- Technologies Used
-- Project Workflow
-- Data Preprocessing
-- Exploratory Data Analysis
-- Model Building
-- Results
-- Installation
-- Usage
-- Project Structure
-- Key Insights
-- Future Enhancements
-- Author
-
----
-
 ## 📌 Overview
 
 The Titanic Survival Prediction project uses historical passenger data from the Titanic disaster to predict survival outcomes. By applying Machine Learning techniques, the model learns patterns from passenger information and determines the probability of survival.
