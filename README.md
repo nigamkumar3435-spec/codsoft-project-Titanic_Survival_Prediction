@@ -1,19 +1,23 @@
-# 🚢 Titanic Survival Prediction using Machine Learning
+# 🚢 Titanic Survival Prediction
 
-A Machine Learning project that predicts whether a passenger survived the Titanic disaster based on demographic and travel-related information. This project demonstrates the complete Machine Learning pipeline, from data preprocessing and exploratory data analysis (EDA) to model training, evaluation, and prediction.
+### CodSoft Data Science Internship Project
+
+A Data Science project that predicts whether a passenger survived the Titanic disaster based on demographic and travel-related information. This project demonstrates the complete data science workflow, including data preprocessing, exploratory data analysis (EDA), model training, evaluation, and prediction.
+
+---
 
 ## 📌 Overview
 
-The Titanic Survival Prediction project uses historical passenger data from the Titanic disaster to predict survival outcomes. By applying Machine Learning techniques, the model learns patterns from passenger information and determines the probability of survival.
+The Titanic Survival Prediction project uses historical passenger data from the Titanic disaster to predict survival outcomes. By applying Machine Learning techniques, the model learns patterns from passenger information and estimates the probability of survival.
 
-This project is ideal for understanding:
+This project covers:
 
-- Data Cleaning
-- Feature Engineering
-- Exploratory Data Analysis (EDA)
-- Classification Algorithms
-- Model Evaluation
-- Predictive Analytics
+* Data Cleaning
+* Exploratory Data Analysis (EDA)
+* Feature Engineering
+* Classification Algorithms
+* Model Evaluation
+* Predictive Analytics
 
 ---
 
@@ -23,20 +27,20 @@ The dataset contains information about Titanic passengers and whether they survi
 
 ### Features Included
 
-| Feature | Description |
-|----------|------------|
-| PassengerId | Unique Passenger Identifier |
-| Survived | Survival Status (0 = No, 1 = Yes) |
-| Pclass | Passenger Class (1st, 2nd, 3rd) |
-| Name | Passenger Name |
-| Sex | Gender |
-| Age | Passenger Age |
-| SibSp | Number of Siblings/Spouses Aboard |
-| Parch | Number of Parents/Children Aboard |
-| Ticket | Ticket Number |
-| Fare | Passenger Fare |
-| Cabin | Cabin Information |
-| Embarked | Port of Embarkation |
+| Feature     | Description                       |
+| ----------- | --------------------------------- |
+| PassengerId | Unique Passenger Identifier       |
+| Survived    | Survival Status (0 = No, 1 = Yes) |
+| Pclass      | Passenger Class (1st, 2nd, 3rd)   |
+| Name        | Passenger Name                    |
+| Sex         | Gender                            |
+| Age         | Passenger Age                     |
+| SibSp       | Number of Siblings/Spouses Aboard |
+| Parch       | Number of Parents/Children Aboard |
+| Ticket      | Ticket Number                     |
+| Fare        | Passenger Fare                    |
+| Cabin       | Cabin Information                 |
+| Embarked    | Port of Embarkation               |
 
 ### Target Variable
 
@@ -51,20 +55,13 @@ Survived
 ## 🎯 Features
 
 ✅ Data Cleaning and Preprocessing
-
 ✅ Missing Value Handling
-
+✅ Exploratory Data Analysis (EDA)
 ✅ Data Visualization
-
 ✅ Feature Encoding
-
 ✅ Logistic Regression Model
-
 ✅ Model Evaluation
-
 ✅ Survival Prediction
-
-✅ Performance Analysis
 
 ---
 
@@ -72,19 +69,19 @@ Survived
 
 ### Programming Language
 
-- Python
+* Python
 
 ### Libraries
 
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-Learn
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-Learn
 
 ### Development Environment
 
-- Jupyter Notebook
+* Google Colab
 
 ---
 
@@ -92,62 +89,54 @@ Survived
 
 ### Step 1: Data Collection
 
-The Titanic dataset is loaded into a Pandas DataFrame and inspected for structure, missing values, and data types.
+Load the Titanic dataset into a Pandas DataFrame and inspect its structure.
 
 ### Step 2: Data Cleaning
 
-The dataset contains missing values which are handled appropriately.
-
-#### Missing Value Treatment
-
-- Cabin column removed due to excessive missing values.
-- Missing Age values replaced using the mean age.
-- Missing Embarked values filled using the most frequent category.
+* Removed the `Cabin` column due to excessive missing values.
+* Replaced missing `Age` values using the mean.
+* Filled missing `Embarked` values using the mode.
 
 ### Step 3: Exploratory Data Analysis (EDA)
 
-EDA is performed to understand the relationship between passenger attributes and survival.
+Performed analysis on:
 
-Analysis includes:
-
-- Survival Distribution
-- Gender Distribution
-- Passenger Class Distribution
-- Survival by Gender
-- Survival by Passenger Class
+* Survival Distribution
+* Gender Distribution
+* Passenger Class Distribution
+* Survival by Gender
+* Survival by Passenger Class
 
 ### Step 4: Data Visualization
 
-Several visualizations are generated:
+Generated:
 
-- Count Plot of Survival Status
-- Gender Distribution Plot
-- Survival vs Gender Plot
-- Passenger Class Distribution Plot
-- Passenger Class vs Survival Plot
+* Survival Count Plot
+* Gender Distribution Plot
+* Survival vs Gender Plot
+* Passenger Class Distribution Plot
+* Passenger Class vs Survival Plot
 
 ### Step 5: Feature Encoding
-
-Machine Learning models require numerical inputs.
 
 #### Gender Encoding
 
 | Gender | Value |
-|----------|----------|
-| Male | 0 |
-| Female | 1 |
+| ------ | ----- |
+| Male   | 0     |
+| Female | 1     |
 
 #### Embarked Encoding
 
 | Port | Value |
-|----------|----------|
-| S | 0 |
-| C | 1 |
-| Q | 2 |
+| ---- | ----- |
+| S    | 0     |
+| C    | 1     |
+| Q    | 2     |
 
 ### Step 6: Feature Selection
 
-The following features are selected for training:
+Features Used:
 
 ```text
 Pclass
@@ -167,17 +156,10 @@ Survived
 
 ### Step 7: Train-Test Split
 
-Dataset division:
-
 ```text
 Training Data : 80%
 Testing Data  : 20%
-```
-
-Random State:
-
-```python
-random_state = 2
+Random State  : 2
 ```
 
 ---
@@ -185,8 +167,6 @@ random_state = 2
 ## 🤖 Model Building
 
 ### Logistic Regression
-
-The project uses the Logistic Regression algorithm for binary classification.
 
 ```python
 from sklearn.linear_model import LogisticRegression
@@ -197,119 +177,71 @@ model.fit(X_train, Y_train)
 
 ### Why Logistic Regression?
 
-- Simple and efficient
-- Suitable for binary classification
-- Easy to interpret
-- Good baseline model
+* Simple and efficient
+* Suitable for binary classification
+* Easy to interpret
+* Strong baseline model
 
 ---
 
 ## 📈 Results
 
-### Model Accuracy
-
-| Metric | Accuracy |
-|----------|----------|
-| Training Accuracy | 80.76% |
-| Testing Accuracy | 78.21% |
+| Metric            | Accuracy |
+| ----------------- | -------- |
+| Training Accuracy | 80.76%   |
+| Testing Accuracy  | 78.21%   |
 
 The model achieves nearly 80% accuracy and successfully captures important survival patterns within the dataset.
-
----
-
-## 📊 Visualizations Included
-
-The notebook contains the following visual analyses:
-
-### Survival Distribution
-
-Shows the number of passengers who survived versus those who did not survive.
-
-### Gender Distribution
-
-Displays the count of male and female passengers.
-
-### Gender vs Survival
-
-Illustrates survival rates across genders.
-
-### Passenger Class Distribution
-
-Displays the distribution of passengers among different classes.
-
-### Passenger Class vs Survival
-
-Shows how passenger class influenced survival probability.
-
----
-
-## ▶️ Usage
-
-1. Open the notebook.
-2. Run all cells sequentially.
-3. Observe data preprocessing steps.
-4. Explore visualizations.
-5. Train the Logistic Regression model.
-6. Evaluate performance metrics.
-7. Generate survival predictions.
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-CODTECH-Projects/
+codsoft-Titanic-Survival-Prediction/
 │
-├── Project1_Titanic_Survival_Prediction.ipynb
+├── Titanic_Survival_Prediction.ipynb
 ├── Titanic-Dataset.csv
-├── README.md
-│
-└── outputs/
-    ├── survival_analysis.png
-    ├── gender_distribution.png
-    ├── pclass_distribution.png
-    └── model_results.png
+└── README.md
 ```
 
 ---
 
 ## 💡 Key Insights
 
-### Gender Matters
-
-Female passengers had a significantly higher survival rate compared to male passengers.
-
-### Passenger Class Matters
-
-First-class passengers had a greater chance of survival than second and third-class passengers.
-
-### Age Influence
-
-Younger passengers generally showed better survival probabilities.
-
-### Socioeconomic Factors
-
-Ticket class and fare were important indicators of survival likelihood.
+* Female passengers had significantly higher survival rates.
+* First-class passengers had a greater chance of survival.
+* Younger passengers generally showed better survival probabilities.
+* Passenger class and fare strongly influenced survival outcomes.
 
 ---
 
 ## 🎓 Learning Outcomes
 
 Through this project, I gained practical experience in:
-```
-- Data Preprocessing
-- Handling Missing Values
-- Feature Engineering
-- Data Visualization
-- Machine Learning Algorithms
-- Model Evaluation
-- Predictive Modeling
-- End-to-End ML Workflow
+
+* Data Preprocessing
+* Handling Missing Values
+* Exploratory Data Analysis (EDA)
+* Feature Engineering
+* Data Visualization
+* Classification Algorithms
+* Model Evaluation
+* Predictive Modeling
+* End-to-End Data Science Workflow
 
 ---
-```
+
+## 👨‍💻 Author
+
+**Nigam Kumar**
+
+🔗 GitHub: https://github.com/nigamkumar3435-spec
+
+---
+
 ## ⭐ Acknowledgements
 
-This project was developed as part of Machine Learning practice and demonstrates the application of Logistic Regression on the Titanic Survival Prediction dataset.
+This project was developed as part of the **CodSoft Data Science Internship Program** and demonstrates the application of Data Science and Machine Learning techniques to predict passenger survival using historical Titanic data.
 
-If you found this project useful, please ⭐ star the repository.
+If you found this project useful, please consider giving the repository a ⭐ Star!
