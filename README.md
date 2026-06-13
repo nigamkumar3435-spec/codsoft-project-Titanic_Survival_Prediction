@@ -53,7 +53,7 @@ Survived
 ---
 
 ## 🎯 Features
-
+```
 ✅ Data Cleaning and Preprocessing
 ✅ Missing Value Handling
 ✅ Exploratory Data Analysis (EDA)
@@ -62,7 +62,7 @@ Survived
 ✅ Logistic Regression Model
 ✅ Model Evaluation
 ✅ Survival Prediction
-
+```
 ---
 
 ## 🛠️ Technologies Used
