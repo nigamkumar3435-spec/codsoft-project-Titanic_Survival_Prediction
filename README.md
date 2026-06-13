@@ -308,3 +308,8 @@ Through this project, I gained practical experience in:
 
 ---
 ```
+## ⭐ Acknowledgements
+
+This project was developed as part of Machine Learning practice and demonstrates the application of Logistic Regression on the Titanic Survival Prediction dataset.
+
+If you found this project useful, please ⭐ star the repository.
